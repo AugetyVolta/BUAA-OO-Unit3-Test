@@ -35,8 +35,9 @@ if __name__ == '__main__':
     echo_on = True  # 是否显示输出信息
     # -------------------------------------------------
     print("======DATA GENERATING======")
+    print(f'Expected waiting time {2 * n}s.')
     os.system(f'python generator.py {n} {generator}')
-    print("======COMPLETE======")
+    print("=========COMPLETE==========")
     folder = os.path.exists('out')
     if not folder:
         os.makedirs('out')
@@ -57,4 +58,4 @@ if __name__ == '__main__':
         print("You have passed all the tests.")
     else:
         print(f"You have {n - pass_cnt} errors.")
-    print("======TEST FINISH======")
+    print("========TEST FINISH========")
