@@ -32,7 +32,7 @@ if __name__ == '__main__':
     generator = 'code.jar'  # 用于数据生成的jar包
     tester = 'mine.jar'  # 用于对拍的jar包
     file_add = "data"
-    echo_on = False  # 是否显示输出信息
+    echo_on = True  # 是否显示输出信息
     # -------------------------------------------------
     print("======DATA GENERATING======")
     os.system(f'python generator.py {n} {generator}')
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         for i in range(1, len(files) + 1):
             os.system(f'java -jar {tester}<data/random{i}.txt >out/out{i}.txt')
             print(f'testId:{i}')
-            if echo_on:
+            if not echo_on:
                 os.system(f'fc ans/ans{i}.txt out/out{i}.txt >diff/diff{i}.txt')
             else:
                 ok = cmp_file(f'ans/ans{i}.txt', f'out/out{i}.txt')
