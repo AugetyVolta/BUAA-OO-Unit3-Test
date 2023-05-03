@@ -1,4 +1,5 @@
 import os
+import generator
 
 
 def cmp_file(file1, file2):
@@ -20,13 +21,18 @@ def cmp_file(file1, file2):
         print('good')
 
 
-file_add = "data"
-echo_on = False
-for home, dirs, files in os.walk(file_add):
-    for i in range(1, len(files) + 1):
-        os.system(f'java -jar code.jar<data/random{i}.txt >out/out{i}.txt')
-        if echo_on:
-            os.system(f'fc ans/ans{i}.txt out/out{i}.txt >diff/diff{i}.txt')
-        else:
-            print(f'testId:{i}')
-            cmp_file(f'ans/ans{i}.txt', f'out/out{i}.txt')
+if __name__ == '__main__':
+    print("======DATA GENERATING======")
+    os.system('python generator.py')
+    print("======COMPLETE======")
+    file_add = "data"
+    echo_on = False
+    for home, dirs, files in os.walk(file_add):
+        for i in range(1, len(files) + 1):
+            os.system(f'java -jar code.jar<data/random{i}.txt >out/out{i}.txt')
+            if echo_on:
+                os.system(f'fc ans/ans{i}.txt out/out{i}.txt >diff/diff{i}.txt')
+            else:
+                print(f'testId:{i}')
+                cmp_file(f'ans/ans{i}.txt', f'out/out{i}.txt')
+    print("======TEST FINISH======")

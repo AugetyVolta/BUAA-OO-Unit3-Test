@@ -7,7 +7,7 @@ import numpy
 base_str = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789'
 id_container = [0, 0]
 group_id_container = [0, 0]
-group = numpy.zeros((50050, 50050))
+group = numpy.zeros((20010, 20010))
 message_id_container = [0, 0]
 
 
