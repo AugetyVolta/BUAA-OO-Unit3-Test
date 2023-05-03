@@ -181,7 +181,8 @@ def query_received_messages():
 
 
 if __name__ == '__main__':
-    for k in range(1, 101):
+    n = int(sys.argv[1])
+    for k in range(1, n + 1):
         with open(f'data/random{k}.txt', 'w') as file:
             sys.stdout = file
             for i in range(5):
