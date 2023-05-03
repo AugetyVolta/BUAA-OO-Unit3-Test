@@ -31,7 +31,7 @@ if __name__ == '__main__':
     generator = 'code.jar'  # 用于数据生成的jar包
     tester = 'mine.jar'  # 用于对拍的jar包
     file_add = "data"
-    echo_on = False
+    echo_on = False # 是否显示输出信息
     print("======DATA GENERATING======")
     os.system(f'python generator.py {n} {generator}')
     print("======COMPLETE======")
