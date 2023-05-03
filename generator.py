@@ -26,7 +26,7 @@ def add_relation():
     else:
         id1 = random.randint(1, 20000)
         id2 = random.randint(1, 20000)
-    value = random.randint(-10, 11)
+    value = random.randint(1, 100)
     print(f"ar {int(id1)} {int(id2)} {value}")
 
 
@@ -111,7 +111,7 @@ def modify_relation():
     else:
         id1 = random.randint(1, 20000)
         id2 = random.randint(1, 20000)
-    value = random.randint(-10, 11)
+    value = random.randint(-100, 100)
     print(f"mr {int(id1)} {int(id2)} {value}")
 
 
