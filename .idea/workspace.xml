@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f158594-66b5-46da-a2b9-f6a6f5e1190b" name="变更" comment="修改了一些数值限定">
+    <list default="true" id="0f158594-66b5-46da-a2b9-f6a6f5e1190b" name="变更" comment="update cmp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.generator">
+  <component name="RunManager" selected="Python.main">
     <configuration name="generator" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="homework_10" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683103608187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update cmp">
+      <created>1683103715962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683103715962</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +154,7 @@
     <MESSAGE value="数据生成和对拍器，只能和他人代码对拍" />
     <MESSAGE value="项目配置文件" />
     <MESSAGE value="修改了一些数值限定" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了一些数值限定" />
+    <MESSAGE value="update cmp" />
+    <option name="LAST_COMMIT_MESSAGE" value="update cmp" />
   </component>
 </project>

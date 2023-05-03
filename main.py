@@ -28,4 +28,5 @@ for home, dirs, files in os.walk(file_add):
         if echo_on:
             os.system(f'fc ans/ans{i}.txt out/out{i}.txt >diff/diff{i}.txt')
         else:
+            print(f'testId:{i}')
             cmp_file(f'ans/ans{i}.txt', f'out/out{i}.txt')
