@@ -183,6 +183,12 @@ def query_received_messages():
 if __name__ == '__main__':
     n = int(sys.argv[1])
     generator = sys.argv[2]
+    folder = os.path.exists('data')
+    if not folder:
+        os.makedirs('data')
+    folder = os.path.exists('ans')
+    if not folder:
+        os.makedirs('ans')
     for k in range(1, n + 1):
         with open(f'data/random{k}.txt', 'w') as file:
             sys.stdout = file
