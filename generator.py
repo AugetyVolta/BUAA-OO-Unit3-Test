@@ -182,6 +182,7 @@ def query_received_messages():
 
 if __name__ == '__main__':
     n = int(sys.argv[1])
+    generator = sys.argv[2]
     for k in range(1, n + 1):
         with open(f'data/random{k}.txt', 'w') as file:
             sys.stdout = file
@@ -212,4 +213,4 @@ if __name__ == '__main__':
                         query_received_messages()
                     if (j % 200 == 0):
                         del_from_group()
-        os.system(f'java -jar code.jar<data/random{k}.txt >ans/ans{k}.txt')
+        os.system(f'java -jar {generator}<data/random{k}.txt >ans/ans{k}.txt')

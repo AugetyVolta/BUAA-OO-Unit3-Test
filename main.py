@@ -28,14 +28,16 @@ def cmp_file(file1, file2):
 
 if __name__ == '__main__':
     n = 100  # 设置测试点总数
+    generator = ''  # 用于数据生成的jar包
+    tester = ''  # 用于对拍的jar包
     print("======DATA GENERATING======")
-    os.system(f'python generator.py {n}')
+    os.system(f'python generator.py {n} {generator}')
     print("======COMPLETE======")
     file_add = "data"
     echo_on = False
     for home, dirs, files in os.walk(file_add):
         for i in range(1, len(files) + 1):
-            os.system(f'java -jar code.jar<data/random{i}.txt >out/out{i}.txt')
+            os.system(f'java -jar {tester}<data/random{i}.txt >out/out{i}.txt')
             print(f'testId:{i}')
             if echo_on:
                 os.system(f'fc ans/ans{i}.txt out/out{i}.txt >diff/diff{i}.txt')
